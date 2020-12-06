@@ -306,6 +306,9 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 	# increase
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 	# decrease
 bindsym $mod+XF86MonBrightnessUp exec xbacklight -inc 1 	# increase
 bindsym $mod+XF86MonBrightnessDown exec xbacklight -dec 1 	# decrease
+bindsym $mod+Shift+XF86MonBrightnessUp exec xbacklight -inc 0.1 	# increase
+bindsym $mod+Shift+XF86MonBrightnessDown exec xbacklight -dec 0.1 	# decrease
+
 
 
 
