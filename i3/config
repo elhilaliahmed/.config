@@ -219,7 +219,7 @@ bar {
 for_window [class="^.*"] border pixel 0
 # Set inner/outer gaps
 gaps inner 8
-gaps outer 5
+gaps outer 10
 
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
@@ -292,14 +292,21 @@ for_window [ class="^Microsoft Teams" ] move to workspace $ws7 focus
 
 # Assign floating/fullscreen enable
 
-for_window[class="jetbrains-idea"] floating enable #fullscreen enable
-for_window[class="jetbrains-clion"] floating enable #fullscreen enable
-for_window[class="vlc"] floating enable fullscreen enable
+for_window[class="jetbrains-idea"] floating enable 	#fullscreen enable
+for_window[class="jetbrains-clion"] floating enable 	#fullscreen enable
+for_window[class="vlc"] floating enable 		#fullscreen enable
 for_window[class="Nitrogen"] floating enable
 for_window[class="Pcmanfm"] floating enable
-for_window[class="discord"] floating enable fullscreen enable
+for_window[class="discord"] floating enable 		#fullscreen enable
 for_window [class="Arandr"] floating enable
-for_window [ class="^Microsoft Teams" ] floating enable fullscreen enable
+for_window [ class="^Microsoft Teams" ] floating enable #fullscreen enable
+
+# IntelliJ idea keybinding
+bindsym $mod+Ctrl+i exec /home/ahmed/.local/share/JetBrains/Toolbox/apps/IDEA-U/ch-0/203.5981.155/bin/./idea.sh
+
+# Clion keybinding
+bindsym $mod+Ctrl+c exec /home/ahmed/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/./clion.sh
+
 
 # Arandr Keybinding
 bindsym $mod+Shift+a exec arandr
@@ -314,10 +321,10 @@ bindsym $mod+t exec teams
 bindsym $mod+Shift+v exec vlc
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 	# increase
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 	# decrease
-bindsym $mod+XF86MonBrightnessUp exec xbacklight -inc 1 	# increase
-bindsym $mod+XF86MonBrightnessDown exec xbacklight -dec 1 	# decrease
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 			# increase
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 			# decrease
+bindsym $mod+XF86MonBrightnessUp exec xbacklight -inc 1 		# increase
+bindsym $mod+XF86MonBrightnessDown exec xbacklight -dec 1 		# decrease
 bindsym $mod+Shift+XF86MonBrightnessUp exec xbacklight -inc 0.1 	# increase
 bindsym $mod+Shift+XF86MonBrightnessDown exec xbacklight -dec 0.1 	# decrease
 
