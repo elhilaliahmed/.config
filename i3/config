@@ -352,7 +352,12 @@ bindsym $mod+Ctrl+Print exec xfce4-screenshooter --window --save /home/ahmed/Pic
 bindsym $mod+Print exec xfce4-screenshooter --region --save /home/ahmed/Pictures/screenshots
 
 
-# Open browser
+# Pcmanfm keybinding
+bindsym $mod+XF86HomePage exec pcmanfm
+
+
+
+# Open browser Keybinding
 bindsym $mod+b exec chromium
 
 # Logout/Rebout/Shutdown
