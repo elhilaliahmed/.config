@@ -117,7 +117,7 @@ set $ws2 "2:  "
 set $ws3 "3:  "
 set $ws4 "4:  "
 set $ws5 "5:  "
-set $ws6 "6"
+set $ws6 "6:  "
 set $ws7 "7"
 set $ws8 "8" 
 set $ws9 "9"
@@ -287,6 +287,7 @@ for_window[class="Chromium"] move to workspace $ws2
 for_window[class="jetbrains-idea"] move to workspace $ws3
 for_window[class="jetbrains-clion"] move to workspace $ws4
 for_window[class="vlc"] move to workspace $ws5
+for_window[class="discord"] move to workspace $ws6
 
 # Assign floating/fullscreen enable
 
@@ -295,12 +296,14 @@ for_window[class="jetbrains-clion"] floating enable #fullscreen enable
 for_window[class="vlc"] floating enable fullscreen enable
 for_window[class="Nitrogen"] floating enable
 for_window[class="Pcmanfm"] floating enable
-
+for_window[class="discord"] floating enable fullscreen enable
 for_window [class="Arandr"] floating enable
+
+# Arandr Keybinding
 bindsym $mod+Shift+a exec arandr
 
-
-
+# Discord keybinding
+bindsym $mod+Shift+s exec discord
 # Brightness control
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 	# increase
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 	# decrease
