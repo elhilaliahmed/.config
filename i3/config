@@ -355,7 +355,8 @@ bindsym $mod+Print exec xfce4-screenshooter --region --save /home/ahmed/Pictures
 # Pcmanfm keybinding
 bindsym $mod+XF86HomePage exec pcmanfm
 
-
+# St keyvinding
+bindsym $mod+Shift+Return exec st
 
 # Open browser Keybinding
 bindsym $mod+b exec chromium
