@@ -63,10 +63,10 @@ bindsym $mod+Escape kill
 bindsym $mod+x exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 
-
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+Ctrl+d exec rofi -show run
 
 # change focus
 bindsym $mod+j focus left
@@ -399,3 +399,4 @@ bindsym $mod+Ctrl+Escape exec setxkbmap fr
 # Zathura keybinding 
 # open zathura histroy in dmenu
 bindsym $mod+z exec cat ~/.local/share/zathura/history | grep -Po "\[\K[^\]]*" | dmenu | xargs zathura
+
