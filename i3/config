@@ -396,4 +396,6 @@ bindsym $mod+ctrl+n scratchpad show
 bindsym $mod+Ctrl+a exec setxkbmap ar
 bindsym $mod+Ctrl+Escape exec setxkbmap fr
 
-
+# Zathura keybinding 
+# open zathura histroy in dmenu
+bindsym $mod+z exec cat ~/.local/share/zathura/history | grep -Po "\[\K[^\]]*" | dmenu | xargs zathura
