@@ -66,7 +66,8 @@ bindsym $mod+x exec --no-startup-id dmenu_run
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+Ctrl+d exec rofi -show run
+bindsym $mod+Ctrl+d exec rofi -show drun
+bindsym $mod+Ctrl+w exec rofi -show window
 
 # change focus
 bindsym $mod+j focus left
@@ -337,8 +338,14 @@ bindsym $mod+Shift+XF86MonBrightnessUp exec xbacklight -inc 0.1 	# increase
 bindsym $mod+Shift+XF86MonBrightnessDown exec xbacklight -dec 0.1 	# decrease
 
 
+#---------------
+# Screen layouts
+#---------------
 
-
+# one screen
+bindsym $mod+Shift+o exec xfce4-terminal -e "/home/ahmed/.screenlayout/./dualscreen.sh"
+# dual screen
+bindsym $mod+Ctrl+o exec xfce4-terminal -e "/home/ahmed/.screenlayout/./oneScreen.sh"
 # Adjust brightness
 # xrandr --output eDP1 --brightness 1
 
