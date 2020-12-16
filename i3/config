@@ -303,7 +303,6 @@ for_window [ class="^Microsoft Teams" ] move to workspace $ws7 focus
 
 for_window[class="jetbrains-idea"] floating enable border pixel 0	#fullscreen enable
 for_window[class="jetbrains-clion"] floating enable 	#fullscreen enable
-for_window[class="vlc"] floating enable 		#fullscreen enable
 for_window[class="Nitrogen"] floating enable
 for_window[class="Pcmanfm"] floating enable
 for_window[class="discord"] floating enable 		#fullscreen enable
